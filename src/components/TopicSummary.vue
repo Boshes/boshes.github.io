@@ -8,7 +8,7 @@
     <div class="level">
       <div class="level-left"></div>
       <div class="level-right">
-        <div class="level-item">
+        <div class="level-item icon-area">
           <a class="icon-button" :href="links.github" title="GitHub">
             <b-icon icon="github" pack="fab"/>
           </a>
@@ -105,8 +105,20 @@ export default {
 }
 
 @media only screen and (max-width: 767px), (min-device-width: 320px) and (max-device-width: 767px) {
-  .tag-area {
-    font-size: 1.5em !important;
+  .type-area {
+    height: 100px;
+  }
+
+	.tag-area {
+		font-size: 1.5em !important;
+  }
+
+  .icon-area {
+    justify-content: space-around !important;
+  }
+
+  .icon-button {
+    margin-right: 0;
   }
 }
 </style>

@@ -1,7 +1,7 @@
 export const information = {
   about: {
     name: 'Justen Morgan',
-    tags: ['Programmer', 'Coder', 'Computer Scientist', 'Web Developer', 'Front-End Developer', 'Software Developer', 'Gamer', 'Guitarist', 'Bassist', 'Ukeleleist', 'Musician', 'Music Lover', 'League of Legends Champion', 'Playstation Classics Fan', 'Rock Band Rocker', 'Guitar Hero God', 'Osu! Player', 'Burger Enthusiast', 'Couch Potato', 'Foodie'],
+    tags: ['Programmer', 'Coder','Computer Scientist', 'Web Developer', 'Front-End Developer', 'Software Developer', 'Software Engineer', 'Full-Stack Developer', 'Gamer', 'Guitarist', 'Bassist', 'Ukeleleist', 'Musician', 'Music Lover', 'League of Legends Champion', 'Playstation Classics Fan', 'Rock Band Rocker', 'Guitar Hero God', 'Osu! Player', 'Burger Enthusiast', 'Couch Potato', 'Foodie'],
     links: {
       email: 'justenamorgan@gmail.com',
       github: 'https://github.com/Boshes',
@@ -17,6 +17,31 @@ export const information = {
     `,
   },
   work: [
+    {
+      employer: 'Vivid Seats',
+      location: 'Toronto, Canada',
+      link: 'https://www.vividseats.com',
+      position: 'Software Engineer',
+      details: 'Ticket Marketplace software development',
+      icon: 'ticket-alt',
+      languages: [
+        {
+          image: 'python.png',
+          link: 'https://www.python.org',
+          text: 'Python'
+        },
+        {
+          image: 'vue.png',
+          link: 'https://vuejs.org',
+          text: 'VueJS'
+        },
+        {
+          image: 'mysql.png',
+          link: 'https://www.mysql.com',
+          text: 'MySQL'
+        }
+      ]
+    },
     {
       employer: 'Ample Organics',
       link: 'https://ampleorganics.com',

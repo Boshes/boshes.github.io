@@ -4,13 +4,13 @@ import Buefy from 'buefy'
 import 'buefy/dist/buefy.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
 
-import { faBriefcase, faCode, faEnvelope, faSeedling, faMicrochip, faChartLine, faSpinner } from "@fortawesome/free-solid-svg-icons"
+import { faBriefcase, faCode, faEnvelope, faTicketAlt, faSeedling, faMicrochip, faChartLine, faSpinner } from "@fortawesome/free-solid-svg-icons"
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome"
 
 Vue.component('vue-fontawesome', FontAwesomeIcon)
 
-library.add(faBriefcase, faCode, faEnvelope, faSeedling, faMicrochip, faChartLine, faSpinner, faGithub, faLinkedin)
+library.add(faBriefcase, faCode, faEnvelope, faTicketAlt, faSeedling, faMicrochip, faChartLine, faSpinner, faGithub, faLinkedin)
 
 Vue.config.productionTip = false
 
