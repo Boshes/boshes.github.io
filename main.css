@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Baloo Paaji', sans-serif;
+  background: #000;
+  font-size: 48px;
+}
+
+.wrapper {
+  height: 100%;
+  padding: 2.5rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.title,
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  transform: translateY(20%);
+}
+
+span,
+a {
+  width: 100%;
+  opacity: 0;
+  text-align: center;
+}
+
+.title span.first {
+  color: white;
+  animation: title-animation 2s ease-in-out 0.5s 1 forwards;
+  transform: translateY(-50px);
+}
+
+.title span.last {
+  color: #50B4F6;
+  animation: title-animation 2s ease-in-out 1s 1 forwards;
+  transform: translateY(50px);
+}
+
+.links a {
+  color: white;
+  text-decoration: none;
+  animation: links-animation 2s ease-in-out 1.25s 1 forwards;
+}
+
+.links a:hover {
+  color: grey;
+}
+.backdrop {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  right: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.backdrop li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  animation: floating 25s linear infinite;
+  bottom: -150px;
+  background: rgba(255, 87, 34, 0.5);
+}
+
+.backdrop li:nth-child(1) {
+  left: 5%;
+  width: 1rem;
+  height: 1rem;
+  animation-delay: 0s;
+}
+
+.backdrop li:nth-child(2) {
+  left: 45%;
+  width: 3rem;
+  height: 3rem;
+  animation-delay: 3s;
+}
+
+.backdrop li:nth-child(3) {
+  left: 25%;
+  width: 4rem;
+  height: 4rem;
+  animation-delay: 6s;
+}
+
+.backdrop li:nth-child(4) {
+  left: 80%;
+  width: 5rem;
+  height: 5rem;
+  animation-delay: 8s;
+}
+
+.backdrop li:nth-child(5) {
+  left: 65%;
+  width: 3rem;
+  height: 3rem;
+  animation-delay: 12s;
+}
+
+
+@keyframes title-animation {
+  0% {
+    opacity: 0;
+    clip-path: polygon(0 100%, 100% 100%, 0 0, 100% 0);
+  }
+
+  20% {
+    transform: translateY(0);
+  }
+
+  25% {
+    clip-path: polygon(100% 100%, 0 100%, 0 0, 100% 0);
+  }
+  75%,
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes links-animation {
+  0% {
+    transform: translateY(0%);
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(-75%);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 0;
+  }
+
+  100% {
+    transform: translateY(-1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 50%;
+  }
+}
